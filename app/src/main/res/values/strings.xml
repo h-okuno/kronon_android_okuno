@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
+    <string name="login"><u>ログイン</u></string>
 </resources>
