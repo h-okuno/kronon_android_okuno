@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
+    <string name="textView3"><u>新規登録</u></string>
 </resources>
