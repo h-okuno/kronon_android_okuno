@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
+    <string name="title_activity_bottom_nabigation">MainActivity</string>
+    <string name="title_calendar">カレンダー</string>
+    <string name="title_planesheet">予定表</string>
+    <string name="title_account">アカウント</string>
 </resources>
