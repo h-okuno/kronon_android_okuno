@@ -182,14 +182,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:background="@drawable/style_textframe"
         android:paddingLeft="25dp"
         android:paddingTop="20dp"
-        android:paddingRight="139dp"
+        android:paddingRight="139.5dp"
         android:paddingBottom="20dp"
         android:text="外部設計レビュー"
         android:textColor="@color/white"
@@ -200,7 +199,7 @@
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="278dp"
-        android:layout_height="241dp"
+        android:layout_height="238dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:background="@drawable/style_textframe"
