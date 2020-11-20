@@ -1,33 +1,25 @@
 package com.example.kronon_android_okuno
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+//import android.support.v7.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import android.widget.CalendarView
-import android.widget.Toast
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bottom_nabigation)
-//        supportActionBar!!.hide()
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-//        val appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-//            )
-//        )
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        setContentView(R.layout.fragment_home)
+        val simpleCalendar = findViewById<SimpleCalendar>(R.id.square_day)
+        val calendar = Calendar.getInstance()
+        // Get current month
+        val month = calendar[Calendar.MONTH]
 
-
-
+        //Get current Year
+        val year = calendar[Calendar.YEAR]
+        simpleCalendar.setUserCurrentMonthYear(month, year)
+        simpleCalendar.setCallBack {
+            // Create on Click event here.
+        }
     }
 }
