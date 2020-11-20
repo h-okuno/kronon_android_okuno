@@ -36,23 +36,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FDF7F0"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="0dp">
-
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:background="#1C1818" />
-    </LinearLayout>
-
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="308dp"
@@ -89,5 +72,12 @@
         android:src="@drawable/icon_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="168dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
