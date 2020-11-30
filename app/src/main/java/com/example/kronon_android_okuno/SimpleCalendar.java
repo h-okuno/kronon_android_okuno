@@ -118,6 +118,7 @@ public class SimpleCalendar extends LinearLayout {
         weeks[3] = weekFourLayout;
         weeks[4] = weekFiveLayout;
         weeks[5] = weekSixLayout;
+
     }
 
     private void initCalendarWithDate(int year, int month, int day) {
