@@ -2,4 +2,8 @@
     <string name="app_name">kronon_android_okuno</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="toptitle">予算管理システム</string>
+    <string name="subtitle">〜くろのん〜</string>
+    <string name="contentDescription">画像</string>
+    <string name="contentDescriptionButton">画像</string>
 </resources>
