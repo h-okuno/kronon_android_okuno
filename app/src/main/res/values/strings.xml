@@ -7,4 +7,5 @@
     <string name="hint_pass">パスワード</string>
     <string name="under_text">アカウントをお持ちでない場合</string>
     <string name="create_new"><u>新規登録</u></string>
+    <string name="login_button">ログイン</string>
 </resources>
