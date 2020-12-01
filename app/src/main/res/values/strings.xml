@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
-    <string name="textView3"><u>新規登録</u></string>
-    <string name="contentDescription">画像</string>
-    <string name="contentDescriptionButton">ボタン</string>
+    <string name="content_description">画像</string>
+    <string name="content_description_button">ボタン</string>
     <string name="login_title">〜くろのん〜</string>
     <string name="hint_mail">メールアドレス</string>
     <string name="hint_pass">パスワード</string>
-    <string name="undertext">アカウントをお持ちでない場合</string>
+    <string name="under_text">アカウントをお持ちでない場合</string>
     <string name="create_new"><u>新規登録</u></string>
 </resources>
