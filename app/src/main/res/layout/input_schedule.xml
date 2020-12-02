@@ -31,31 +31,34 @@
             android:id="@+id/imageView"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_gravity="center"
             app:layout_constraintEnd_toStartOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="@+id/textView3"
             app:srcCompat="@drawable/logo_inputschedule" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:text="予定登録"
-            android:textColor="#515C6F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_input_schedule"
+            android:textColor="#5C5A5A"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent " />
 
     </androidx.appcompat.widget.Toolbar>
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="307dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
-        android:hint="タイトル"
+        android:hint="@string/hint_title"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="#80515C6F"
@@ -64,16 +67,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintWidth_max="400dp" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="308dp"
-        android:layout_height="44dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:gravity="right"
-        android:hint="2020/03/03"
+        android:hint="@string/hint_date"
         android:inputType="date"
         android:textColor="#5C5A5A"
         android:textColorHint="#80515C6F"
@@ -82,16 +88,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintWidth_max="400dp"/>
 
     <EditText
         android:id="@+id/editTextTime"
-        android:layout_width="305dp"
-        android:layout_height="46dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:gravity="right"
-        android:hint="9:00"
+        android:hint="@string/hint_start_time"
         android:inputType="time"
         android:textColor="#5C5A5A"
         android:textColorHint="#80515C6F"
@@ -100,16 +109,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        app:layout_constraintWidth_max="400dp"/>
 
     <EditText
         android:id="@+id/editTextTime2"
-        android:layout_width="305dp"
-        android:layout_height="49dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:gravity="right"
-        android:hint="10:00"
+        android:hint="@string/hint_end_time"
         android:inputType="time"
         android:textColor="#5C5A5A"
         android:textColorHint="#80515C6F"
@@ -118,7 +130,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        app:layout_constraintWidth_max="400dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -127,7 +140,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="10dp"
-        android:text="内容"
+        android:text="@string/content"
         android:textColor="#5C5A5A"
         android:textSize="15sp"
         android:textStyle="bold"

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
+    <string name="title_input_schedule">予定登録</string>
+    <string name="hint_title">タイトル</string>
+    <string name="hint_date">2020/03/03</string>
+    <string name="hint_start_time">9:00</string>
+    <string name="hint_end_time">10:00</string>
+    <string name="content">内容</string>
 </resources>
