@@ -10,7 +10,7 @@
 
     <!-- ツールバーをセット （androidx） -->
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/detail_schedule_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -54,126 +54,147 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/brackborad"
-        android:layout_width="0dp"
-        android:layout_height="540dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="@string/content_description_brackborad"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintWidth_max="400dp"
-        app:srcCompat="@drawable/brackboad" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="0dp"
-        android:background="@drawable/style_textframe"
-        android:paddingLeft="35dp"
-        android:paddingTop="15dp"
-        android:paddingRight="35dp"
-        android:paddingBottom="15dp"
-        android:text="@string/text_name"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/brackborad"
-        app:layout_constraintTop_toTopOf="@+id/brackborad" />
+        <ImageView
+            android:id="@+id/brackborad"
+            android:layout_width="0dp"
+            android:layout_height="540dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/content_description_brackborad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_max="400dp"
+            app:srcCompat="@drawable/brackboad"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="#FFD8D6"
-        android:paddingLeft="10dp"
-        android:paddingTop="15dp"
-        android:paddingRight="9dp"
-        android:paddingBottom="15dp"
-        android:text="@string/text_place"
-        android:textColor="#5C5A5A"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/brackborad" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/style_textframe"
+            android:paddingLeft="35dp"
+            android:paddingTop="15dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="15dp"
+            android:text="@string/text_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/brackborad"
+            app:layout_constraintTop_toTopOf="@+id/brackborad"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style_textframe"
-        android:paddingLeft="30dp"
-        android:paddingTop="20dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="20dp"
-        android:text="@string/text_date_time"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#FFD8D6"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="15dp"
+            android:text="@string/text_place"
+            android:textColor="#5C5A5A"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/brackborad" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
-        android:background="@drawable/style_textframe"
-        android:paddingLeft="25dp"
-        android:paddingTop="20dp"
-        android:paddingRight="135dp"
-        android:paddingBottom="20dp"
-        android:text="@string/text_title"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/style_textframe"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:text="@string/text_date_time"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/brackborad"
+            app:layout_constraintStart_toStartOf="@+id/brackborad"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="273dp"
-        android:layout_height="238dp"
-        android:background="@drawable/style_textframe"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:lines="7"
-        android:padding="10dp"
-        android:text="@string/text_content"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/style_textframe"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp"
+            android:paddingRight="135dp"
+            android:paddingBottom="20dp"
+            android:text="@string/text_title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/brackborad"
+            app:layout_constraintStart_toStartOf="@+id/brackborad"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_template_orenge"
-        android:paddingLeft="0dp"
-        android:paddingTop="0dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="10dp"
-        android:text="@string/button_edit"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/brackborad"
-        app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/style_textframe"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:padding="10dp"
+            android:text="@string/text_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/brackborad"
+            app:layout_constraintStart_toStartOf="@+id/brackborad"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_template_orenge"
-        android:paddingLeft="0dp"
-        android:paddingTop="0dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="10dp"
-        android:text="@string/button_delite"
-        app:layout_constraintEnd_toEndOf="@+id/brackborad"
-        app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_template_orenge"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:text="@string/button_edit"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/brackborad"
+            app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_template_orenge"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:text="@string/button_delite"
+            app:layout_constraintEnd_toEndOf="@+id/brackborad"
+            app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
