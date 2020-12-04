@@ -41,6 +41,7 @@
             app:srcCompat="@drawable/icon_calender" />
 
         <TextView
+            android:id="@+id/detail_schedule_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -77,43 +78,54 @@
             app:srcCompat="@drawable/brackboad"
             tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textView8"
+        <LinearLayout
+            android:id="@+id/detail_schedule_linear_nama_place"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="0dp"
-            android:background="@drawable/style_textframe"
-            android:paddingLeft="35dp"
-            android:paddingTop="15dp"
-            android:paddingRight="35dp"
-            android:paddingBottom="15dp"
-            android:text="@string/text_name"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/brackborad"
             app:layout_constraintStart_toStartOf="@+id/brackborad"
             app:layout_constraintTop_toTopOf="@+id/brackborad"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="0dp" />
+            app:layout_constraintWidth_max="400dp">
+
+            <TextView
+                android:id="@+id/detail_schedule_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/style_textframe"
+                android:paddingLeft="40dp"
+                android:paddingTop="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="15dp"
+                android:text="@string/text_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/brackborad"
+                app:layout_constraintTop_toTopOf="@+id/brackborad" />
+
+            <TextView
+                android:id="@+id/detail_schedule_text_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFD8D6"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:text="@string/text_place"
+                android:textColor="#5C5A5A"
+                app:layout_constraintStart_toEndOf="@+id/detail_schedule_text_name"
+                app:layout_constraintTop_toTopOf="@+id/brackborad" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="#FFD8D6"
-            android:paddingLeft="10dp"
-            android:paddingTop="15dp"
-            android:paddingRight="9dp"
-            android:paddingBottom="15dp"
-            android:text="@string/text_place"
-            android:textColor="#5C5A5A"
-            app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toTopOf="@+id/brackborad" />
-
-        <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/detail_schedule_text_date_time"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -128,10 +140,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/brackborad"
             app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_linear_nama_place" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/detail_schedule_text_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -146,10 +158,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/brackborad"
             app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_date_time" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/detail_schedule_edit_content"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
@@ -166,34 +178,43 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/brackborad"
             app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_title" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_template_orenge"
-            android:paddingLeft="0dp"
-            android:paddingTop="0dp"
-            android:paddingRight="0dp"
-            android:paddingBottom="10dp"
-            android:text="@string/button_edit"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/brackborad">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_template_orenge"
-            android:paddingLeft="0dp"
-            android:paddingTop="0dp"
-            android:paddingRight="0dp"
-            android:paddingBottom="10dp"
-            android:text="@string/button_delite"
-            app:layout_constraintEnd_toEndOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+            <Button
+                android:id="@+id/detail_schedule_button_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_template_orenge"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="10dp"
+                android:text="@string/button_edit"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/brackborad"
+                app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+
+            <Button
+                android:id="@+id/detail_schedule_button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_template_orenge"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="10dp"
+                android:text="@string/button_delite"
+                app:layout_constraintEnd_toEndOf="@+id/brackborad"
+                app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
