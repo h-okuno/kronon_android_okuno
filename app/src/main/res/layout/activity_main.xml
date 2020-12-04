@@ -68,12 +68,12 @@
             app:srcCompat="@drawable/star_topview" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/button_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="71dp"
             android:background="?attr/selectableItemBackground"
-            android:contentDescription="@string/strat_button"
+            android:contentDescription="@string/start_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
