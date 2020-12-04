@@ -62,126 +62,135 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/detail_schedule_toolbar">
 
-        <ImageView
-            android:id="@+id/brackborad"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="0dp"
-            android:layout_height="540dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:contentDescription="@string/content_description_brackborad"
+            android:background="@drawable/brackboad"
+            android:orientation="vertical"
+            android:padding="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintWidth_max="400dp"
-            app:srcCompat="@drawable/brackboad"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/detail_schedule_linear_nama_place"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/brackborad"
-            app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toTopOf="@+id/brackborad"
-            app:layout_constraintWidth_max="400dp">
+            <LinearLayout
+                android:id="@+id/detail_schedule_linear_nama_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintWidth_max="400dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="20dp">
+
+                <TextView
+                    android:id="@+id/detail_schedule_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_textframe"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/text_name"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/brackborad"
+                    app:layout_constraintTop_toTopOf="@+id/brackborad" />
+
+                <TextView
+                    android:id="@+id/detail_schedule_text_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFD8D6"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/text_place"
+                    android:textColor="#5C5A5A"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/detail_schedule_text_name"
+                    app:layout_constraintTop_toTopOf="@+id/brackborad" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/detail_schedule_text_name"
-                android:layout_width="wrap_content"
+                android:id="@+id/detail_schedule_text_date_time"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@drawable/style_textframe"
-                android:paddingStart="40dp"
-                android:paddingTop="15dp"
-                android:paddingEnd="40dp"
-                android:paddingBottom="15dp"
-                android:text="@string/text_name"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/text_date_time"
                 android:textColor="@color/white"
+                android:textSize="12sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/brackborad"
-                app:layout_constraintTop_toTopOf="@+id/brackborad" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_schedule_linear_nama_place" />
 
             <TextView
-                android:id="@+id/detail_schedule_text_place"
-                android:layout_width="wrap_content"
+                android:id="@+id/detail_schedule_text_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#FFD8D6"
+                android:background="@drawable/style_textframe"
                 android:paddingStart="20dp"
-                android:paddingTop="15dp"
                 android:paddingEnd="20dp"
-                android:paddingBottom="15dp"
-                android:text="@string/text_place"
-                android:textColor="#5C5A5A"
-                app:layout_constraintStart_toEndOf="@+id/detail_schedule_text_name"
-                app:layout_constraintTop_toTopOf="@+id/brackborad" />
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/text_title"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_date_time" />
 
-        </LinearLayout>
+            <EditText
+                android:id="@+id/detail_schedule_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/style_textframe"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hint_content"
+                android:inputType="textMultiLine"
+                android:lines="15"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/text_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_title" />
 
-        <TextView
-            android:id="@+id/detail_schedule_text_date_time"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/style_textframe"
-            android:padding="20dp"
-            android:text="@string/text_date_time"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/brackborad"
-            app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_linear_nama_place" />
-
-        <TextView
-            android:id="@+id/detail_schedule_text_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/style_textframe"
-            android:padding="20dp"
-            android:text="@string/text_title"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/brackborad"
-            app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_date_time" />
-
-        <EditText
-            android:id="@+id/detail_schedule_edit_content"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/style_textframe"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:lines="14"
-            android:padding="20dp"
-            android:text="@string/text_content"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:autofillHints=""
-            android:hint="@string/hint_content"
-            app:layout_constraintEnd_toEndOf="@+id/brackborad"
-            app:layout_constraintStart_toStartOf="@+id/brackborad"
-            app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/brackborad">
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
             <Button
                 android:id="@+id/detail_schedule_button_edit"
