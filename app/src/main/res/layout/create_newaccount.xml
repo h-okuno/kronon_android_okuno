@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDF7F0"
+    android:background="@color/default_background"
     tools:context=".MainActivity">
 
     <!-- ツールバーをセット （androidx） -->
@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,9 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/contentDescriptinButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/content_descriptin_button"
             app:srcCompat="@drawable/button_back" />
 
         <TextView
@@ -33,13 +30,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/title_create_newaccount"
-            android:textColor="#5C5A5A"
+            android:text="@string/title_create_new_account"
+            android:textColor="@color/default_text_color"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent " />
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="15dp" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -48,7 +43,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_create_account">
 
@@ -58,11 +52,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:lines="4"
-            android:text="@string/uppertext"
-            android:textColor="#5C5A5A"
+            android:text="@string/upper_text"
+            android:textColor="@color/default_text_color"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,16 +67,15 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:background="@drawable/newaccount_form"
+            android:background="@drawable/new_account_form"
             android:ems="10"
             android:hint="@string/hint_name"
             android:inputType="textPersonName"
             android:padding="15dp"
-            android:textColor="#5C5A5A"
-            android:textColorHint="#5C5A5A"
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/hint_color"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/create_account_text_up"
             app:layout_constraintWidth_max="400dp" />
@@ -96,12 +88,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:background="@drawable/newaccount_form"
+            android:background="@drawable/new_account_form"
             android:ems="10"
             android:hint="@string/hint_mail"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColorHint="#5C5A5A"
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/hint_color"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -117,12 +110,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:background="@drawable/create_newaccount_form"
+            android:background="@drawable/create_new_account_form"
             android:ems="10"
             android:hint="@string/hint_pass"
             android:inputType="textPassword"
             android:padding="15dp"
-            android:textColorHint="#5C5A5A"
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/hint_color"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -138,12 +132,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:background="@drawable/newaccount_form"
+            android:background="@drawable/new_account_form"
             android:ems="10"
             android:hint="@string/hint_confpass"
             android:inputType="textPassword"
             android:padding="15dp"
-            android:textColorHint="#5C5A5A"
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/hint_color"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -164,33 +159,19 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/create_account_confpass"
-            app:layout_constraintWidth_max="400dp"/>
+            app:layout_constraintWidth_max="400dp" />
 
         <TextView
             android:id="@+id/create_account_text_under"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginLeft="45dp"
             android:layout_marginTop="15dp"
-            android:text="@string/create_newaccount_undertext"
+            android:text="@string/create_new_account_under_text"
             android:textColor="#5C5A5A"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/button_create_account"
-            app:layout_constraintTop_toBottomOf="@+id/button_create_account" />
-
-        <TextView
-            android:id="@+id/create_account_url_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="12dp"
-            android:text="@string/login"
-            android:textColor="#5C5A5A"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/create_account_text_under"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_create_account" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
