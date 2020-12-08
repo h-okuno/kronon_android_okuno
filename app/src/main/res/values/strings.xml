@@ -4,4 +4,7 @@
     <string name="title_calendar">カレンダー</string>
     <string name="title_planesheet">予定表</string>
     <string name="title_account">アカウント</string>
+    <string name="text_name">藤本</string>
+    <string name="text_mail">hujimoto@mail.com</string>
+    <string name="button_logout">ログアウト</string>
 </resources>
