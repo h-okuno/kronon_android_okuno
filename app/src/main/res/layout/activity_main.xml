@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_topview"
+    android:background="@drawable/background_top_view"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -25,7 +24,6 @@
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +37,6 @@
             android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_title"
             tools:ignore="MissingConstraints" />
@@ -52,7 +49,7 @@
             android:contentDescription="@string/character_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_subtitle"
-            app:srcCompat="@drawable/kronon_topview"
+            app:srcCompat="@drawable/kronon_top_view"
             tools:ignore="MissingConstraints" />
 
         <ImageView
@@ -65,20 +62,25 @@
             android:contentDescription="@string/character_2"
             app:layout_constraintEnd_toEndOf="@+id/image_kronon"
             app:layout_constraintTop_toBottomOf="@+id/text_subtitle"
-            app:srcCompat="@drawable/star_topview" />
+            app:srcCompat="@drawable/star_top_view" />
 
-        <ImageButton
-            android:id="@+id/button_start"
+        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="71dp"
-            android:background="?attr/selectableItemBackground"
-            android:contentDescription="@string/start_button"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_start_background"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:text="@string/start"
+            android:textColor="#5C5A5A"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_kronon"
-            app:srcCompat="@drawable/button_topview" />
+            app:layout_constraintTop_toBottomOf="@+id/image_kronon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
