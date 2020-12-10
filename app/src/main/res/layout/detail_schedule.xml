@@ -88,7 +88,7 @@
                 <TextView
                     android:id="@+id/detail_schedule_text_name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/style_text_frame"
                     android:paddingStart="20dp"
@@ -105,7 +105,7 @@
                 <TextView
                     android:id="@+id/detail_schedule_text_place"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/place_background"
                     android:paddingStart="20dp"
