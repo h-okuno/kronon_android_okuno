@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/detail_schedule_toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+            android:id="@+id/constraint_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+            app:layout_constraintTop_toBottomOf="@+id/constraint_layout">
 
             <Button
                 android:id="@+id/detail_schedule_button_edit"
@@ -211,7 +211,7 @@
                 android:paddingTop="0dp"
                 android:paddingEnd="0dp"
                 android:paddingBottom="10dp"
-                android:text="@string/button_delite"
+                android:text="@string/button_delete"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="@+id/blackboard"
                 app:layout_constraintTop_toBottomOf="@+id/blackboard" />
