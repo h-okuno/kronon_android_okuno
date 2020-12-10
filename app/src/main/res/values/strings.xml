@@ -2,9 +2,10 @@
     <string name="app_name">kronon_android_okuno</string>
     <string name="title_activity_bottom_nabigation">MainActivity</string>
     <string name="title_calendar">カレンダー</string>
-    <string name="title_planesheet">予定表</string>
+    <string name="title_plane_sheet">予定表</string>
     <string name="title_account">アカウント</string>
     <string name="text_name">藤本</string>
     <string name="text_mail">hujimoto@mail.com</string>
     <string name="button_logout">ログアウト</string>
+    <string name="content_description_icon_account">アカウントアイコン</string>
 </resources>
