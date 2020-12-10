@@ -8,4 +8,6 @@
     <string name="text_mail">hujimoto@mail.com</string>
     <string name="button_logout">ログアウト</string>
     <string name="content_description_icon_account">アカウントアイコン</string>
+    <string name="content_description_icon_user">ユーザーアイコン</string>
+    <string name="content_description_icon_logout">ログアウトアイコン</string>
 </resources>
