@@ -7,9 +7,9 @@
         android:title="@string/title_calendar" />
 
     <item
-        android:id="@+id/navigation_planesheet"
+        android:id="@+id/navigation_plane_sheet"
         android:icon="@drawable/ic_baseline_schedule_24"
-        android:title="@string/title_planesheet" />
+        android:title="@string/title_plane_sheet" />
 
     <item
         android:id="@+id/navigation_account"
