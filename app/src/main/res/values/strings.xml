@@ -11,5 +11,5 @@
     <string name="content_description_button_back">戻るボタン</string>
     <string name="content_description_brackborad">黒板</string>
     <string name="content_description_icon_calendar">カレンダーアイコン</string>
-    <string name="hint_content">なし</string>
+    <string name="hint_content">　</string>
 </resources>

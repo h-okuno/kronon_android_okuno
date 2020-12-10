@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDF7F0"
+    android:background="@color/default_background"
     android:paddingBottom="10dp"
     tools:context=".MainActivity">
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/title_detail_schedule"
-            android:textColor="#5C5A5A"
+            android:textColor="@color/default_text"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_schedule_toolbar">
 
@@ -70,56 +69,54 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/brackboad"
-            android:orientation="vertical"
-            android:padding="20dp"
+            android:background="@drawable/blackboard"
+            android:padding="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="400dp">
 
             <LinearLayout
-                android:id="@+id/detail_schedule_linear_nama_place"
+                android:id="@+id/detail_schedule_linear_name_place"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_max="400dp"
-                app:layout_constraintHorizontal_bias="0.5"
-                tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="20dp">
 
                 <TextView
                     android:id="@+id/detail_schedule_text_name"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/style_textframe"
+                    android:background="@drawable/style_text_frame"
                     android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:text="@string/text_name"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@+id/brackborad"
-                    app:layout_constraintTop_toTopOf="@+id/brackborad" />
+                    app:layout_constraintStart_toStartOf="@+id/blackboard"
+                    app:layout_constraintTop_toTopOf="@+id/blackboard" />
 
                 <TextView
                     android:id="@+id/detail_schedule_text_place"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#FFD8D6"
+                    android:background="@color/place_background"
                     android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
                     android:paddingBottom="10dp"
                     android:text="@string/text_place"
-                    android:textColor="#5C5A5A"
+                    android:textColor="@color/default_text"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/detail_schedule_text_name"
-                    app:layout_constraintTop_toTopOf="@+id/brackborad" />
+                    app:layout_constraintTop_toTopOf="@+id/blackboard" />
 
             </LinearLayout>
 
@@ -127,7 +124,7 @@
                 android:id="@+id/detail_schedule_text_date_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_textframe"
+                android:background="@drawable/style_text_frame"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="10dp"
@@ -137,15 +134,14 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/detail_schedule_linear_nama_place" />
+                app:layout_constraintTop_toBottomOf="@+id/detail_schedule_linear_name_place" />
 
             <TextView
                 android:id="@+id/detail_schedule_text_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_textframe"
+                android:background="@drawable/style_text_frame"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="10dp"
@@ -155,20 +151,18 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_date_time" />
 
-            <EditText
+            <TextView
                 android:id="@+id/detail_schedule_edit_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
-                android:background="@drawable/style_textframe"
+                android:background="@drawable/style_text_frame"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="@string/hint_content"
-                android:inputType="textMultiLine"
                 android:lines="15"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
@@ -179,7 +173,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/detail_schedule_text_title" />
 
@@ -197,7 +190,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_template_orenge"
+                android:background="@drawable/button_template_orange"
                 android:paddingStart="0dp"
                 android:paddingTop="0dp"
                 android:paddingEnd="0dp"
@@ -205,23 +198,23 @@
                 android:text="@string/button_edit"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="@+id/brackborad"
-                app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+                app:layout_constraintStart_toStartOf="@+id/blackboard"
+                app:layout_constraintTop_toBottomOf="@+id/blackboard" />
 
             <Button
                 android:id="@+id/detail_schedule_button_delete"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_template_orenge"
+                android:background="@drawable/button_template_orange"
                 android:paddingStart="0dp"
                 android:paddingTop="0dp"
                 android:paddingEnd="0dp"
                 android:paddingBottom="10dp"
                 android:text="@string/button_delite"
                 android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="@+id/brackborad"
-                app:layout_constraintTop_toBottomOf="@+id/brackborad" />
+                app:layout_constraintEnd_toEndOf="@+id/blackboard"
+                app:layout_constraintTop_toBottomOf="@+id/blackboard" />
 
         </LinearLayout>
 
