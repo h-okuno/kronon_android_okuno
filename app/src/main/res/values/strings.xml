@@ -11,5 +11,7 @@
     <string name="content_description_button_back">戻るボタン</string>
     <string name="content_description_blackboard">黒板</string>
     <string name="content_description_icon_calendar">カレンダーアイコン</string>
+    <string name="content_description_icon_edit">修正アイコン</string>
+    <string name="content_description_icon_delete">削除アイコン</string>
     <string name="hint_content">　</string>
 </resources>

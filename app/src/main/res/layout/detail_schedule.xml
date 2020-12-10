@@ -185,36 +185,76 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/constraint_layout">
 
-            <Button
-                android:id="@+id/detail_schedule_button_edit"
-                style="?android:attr/buttonBarButtonStyle"
+            <LinearLayout
+                android:id="@+id/button_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_template_orange"
-                android:paddingStart="0dp"
-                android:paddingTop="0dp"
-                android:paddingEnd="0dp"
-                android:paddingBottom="10dp"
-                android:text="@string/button_edit"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="@+id/blackboard"
-                app:layout_constraintTop_toBottomOf="@+id/blackboard" />
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClickKeyReissue"
+                tools:ignore="OnClick"
+                android:focusable="true">
 
-            <Button
-                android:id="@+id/detail_schedule_button_delete"
-                style="?android:attr/buttonBarButtonStyle"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_edit_white"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:contentDescription="@string/content_description_icon_edit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_edit"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_template_orange"
-                android:paddingStart="0dp"
-                android:paddingTop="0dp"
-                android:paddingEnd="0dp"
-                android:paddingBottom="10dp"
-                android:text="@string/button_delete"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="@+id/blackboard"
-                app:layout_constraintTop_toBottomOf="@+id/blackboard" />
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClickKeyReissue"
+                android:padding="8dp"
+                tools:ignore="OnClick"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_garbagecan"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:contentDescription="@string/content_description_icon_delete"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_delete"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
 
         </LinearLayout>
 
