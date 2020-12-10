@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="EditTextColorControl">
-        <item name="colorControlNormal">@color/colorUnderLineNormal</item>
-        <item name="colorControlActivated">@color/colorUnderLineActivated</item>
+        <item name="colorControlNormal">@color/color_under_line_normal</item>
+        <item name="colorControlActivated">@color/color_under_line_activated</item>
     </style>
 </resources>
