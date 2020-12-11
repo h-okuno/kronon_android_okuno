@@ -2,6 +2,9 @@
     <string name="app_name">kronon_android_okuno</string>
     <string name="title_activity_bottom_nabigation">MainActivity</string>
     <string name="title_calendar">カレンダー</string>
-    <string name="title_planesheet">予定表</string>
+    <string name="title_plane_sheet">予定表</string>
     <string name="title_account">アカウント</string>
+    <string name="content_description_button_input_schedule">予定登録ボタン</string>
+    <string name="content_description_icon_calendar">カレンダーアイコン</string>
+    <string name="top_text">おはよう🌞今日は水曜日、折り返しだよ。今日も1日がんばろうね！</string>
 </resources>
