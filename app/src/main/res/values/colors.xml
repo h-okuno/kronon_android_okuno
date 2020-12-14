@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background_login">#365A0C</color>
-    <color name="default_text_color">#5C5A5A</color>
     <color name="hint_color">#BEBBBB</color>
     <color name="default_background">#FDF7F0</color>
->>>>>>> origin/create_newaccount
+    <color name="color_under_line_normal">#C0C0C0</color>
+    <color name="color_under_line_activated">#FF4081</color>
+    <color name="default_text">#5C5A5A</color>
+    <color name="hint_text">#80515C6F</color>
 </resources>

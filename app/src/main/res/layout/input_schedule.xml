@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    tools:context=".InputScheduleActivity">
+
+    <!-- ツールバーをセット （androidx） -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_input_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_description_back_button"
+            app:srcCompat="@drawable/button_back" />
+
+        <ImageView
+            android:id="@+id/icon_input_schedule"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content_description_icon_schedule"
+            app:srcCompat="@drawable/logo_input_schedule" />
+
+        <TextView
+            android:id="@+id/title_input_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_input_schedule"
+            android:textColor="@color/default_text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent " />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_input_schedule">
+
+        <EditText
+            android:id="@+id/input_schedule_text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hint_title"
+            android:inputType="textPersonName"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="15sp"
+            android:theme="@style/EditTextColorControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_max="400dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/input_schedule_edit_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="end"
+            android:hint="@string/hint_date"
+            android:inputType="date"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="15sp"
+            android:theme="@style/EditTextColorControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_text_title"
+            app:layout_constraintWidth_max="400dp" />
+
+        <TextView
+            android:id="@+id/input_schedule_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/title_date"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/input_schedule_edit_date"
+            app:layout_constraintTop_toTopOf="@+id/input_schedule_edit_date" />
+
+        <EditText
+            android:id="@+id/input_schedule_edit_start_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="end"
+            android:hint="@string/hint_start_time"
+            android:inputType="time"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="15sp"
+            android:theme="@style/EditTextColorControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_edit_date"
+            app:layout_constraintWidth_max="400dp" />
+
+        <TextView
+            android:id="@+id/input_schedule_text_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/title_start_time"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/input_schedule_edit_start_time"
+            app:layout_constraintTop_toTopOf="@+id/input_schedule_edit_start_time" />
+
+        <EditText
+            android:id="@+id/input_schedule_edit_end_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="end"
+            android:hint="@string/hint_end_time"
+            android:inputType="time"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="15sp"
+            android:theme="@style/EditTextColorControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_edit_start_time"
+            app:layout_constraintWidth_max="400dp" />
+
+        <TextView
+            android:id="@+id/input_schedule_text_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/title_end_time"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/input_schedule_edit_end_time"
+            app:layout_constraintTop_toTopOf="@+id/input_schedule_edit_end_time" />
+
+        <TextView
+            android:id="@+id/input_schedule_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/content"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/input_schedule_edit_end_time"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_edit_end_time" />
+
+        <EditText
+            android:id="@+id/input_schedule_edit_content"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/content_form"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/hint_content"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="15sp"
+            android:theme="@style/EditTextColorControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_text_content"
+            app:layout_constraintWidth_max="400dp" />
+
+        <Button
+            android:id="@+id/input_schedule_button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:paddingBottom="10dp"
+            android:text="@string/button_ok"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_schedule_edit_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
