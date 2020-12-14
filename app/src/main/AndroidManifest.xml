@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity android:name=".TopViewActivity">
-<!--        <activity android:name=".LoginActivity">-->
-<!--        <activity android:name=".MainActivity">-->
-<!--        <activity android:name=".InputScheduleActivity">-->
-<!--        <activity android:name=".EditScheduleActivity">-->
-<!--        <activity android:name=".DetailScheduleActivity">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateNewAccountActivity" />
+        <activity android:name=".DetailScheduleActivity" />
+        <activity android:name=".EditScheduleActivity" />
+        <activity android:name=".InputScheduleActivity" />
     </application>
 
 </manifest>
