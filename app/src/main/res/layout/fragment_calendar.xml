@@ -42,7 +42,7 @@
         android:layout_height="match_parent"
         android:background="#FDF7F0"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity"
+        tools:context=".AccountActivity"
         tools:layout_editor_absoluteX="0dp">
 
         <CalendarView
