@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_login">#365A0C</color>
     <color name="default_text_color">#5C5A5A</color>
+    <color name="hint_color">#BEBBBB</color>
+    <color name="default_background">#FDF7F0</color>
+>>>>>>> origin/create_newaccount
 </resources>

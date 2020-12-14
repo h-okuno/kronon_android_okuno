@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
+<<<<<<< HEAD
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="top_view_title">予算管理システム</string>
@@ -11,8 +12,14 @@
     <string name="content_description">画像</string>
     <string name="content_description_button">ボタン</string>
     <string name="login_title">〜くろのん〜</string>
-    <string name="hint_mail">メールアドレス</string>
-    <string name="hint_pass">パスワード</string>
     <string name="under_text">アカウントをお持ちでない場合　<u>新規登録</u></string>
     <string name="login_button">ログイン</string>
-</resources>
+    <string name="title_create_new_account">アカウント作成</string>
+    <string name="upper_text">表示名は日本語で15文字以内\nパスワードは半角英数字で8〜20文字\n大文字・小文字・数字を必ず使用して\n設定してね。</string>
+    <string name="hint_name">表示名</string>
+    <string name="hint_mail">メールアドレス</string>
+    <string name="hint_pass">パスワード</string>
+    <string name="hint_confpass">パスワード確認</string>
+    <string name="create_new_account_under_text">ログインアカウントがある？　<u>ログイン</u></string>
+    <string name="create_new_account">新規登録</string>
+>>>>>>> origin/create_newaccount
