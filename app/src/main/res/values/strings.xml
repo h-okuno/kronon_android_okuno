@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">kronon_android_okuno</string>
-<<<<<<< HEAD
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="top_view_title">予算管理システム</string>
@@ -22,4 +21,4 @@
     <string name="hint_confpass">パスワード確認</string>
     <string name="create_new_account_under_text">ログインアカウントがある？　<u>ログイン</u></string>
     <string name="create_new_account">新規登録</string>
->>>>>>> origin/create_newaccount
+</resources>
