@@ -22,6 +22,7 @@
     <string name="create_new_account_under_text">ログインアカウントがある？　<u>ログイン</u></string>
     <string name="create_new_account">新規登録</string>
     <string name="title_input_schedule">予定登録</string>
+    <string name="title_edit_schedule">予定修正</string>
     <string name="hint_title">タイトル</string>
     <string name="hint_date">2020/03/03</string>
     <string name="hint_start_time">9:00</string>
@@ -34,4 +35,11 @@
     <string name="button_ok">OK!</string>
     <string name="content_description_back_button">戻るボタン</string>
     <string name="content_description_icon_schedule">カレンダーアイコン</string>
+    <string name="text_title">外部設計レビュー</string>
+    <string name="text_date">2020/7/11</string>
+    <string name="text_start_time">11:00</string>
+    <string name="text_end_time">12:00</string>
+    <string name="text_content">阿部さんの外部設計レビュー</string>
+    <string name="title_content">内容</string>
+    <string name="content_description_button_back">戻るボタン</string>
 </resources>
