@@ -42,4 +42,14 @@
     <string name="text_content">阿部さんの外部設計レビュー</string>
     <string name="title_content">内容</string>
     <string name="content_description_button_back">戻るボタン</string>
+    <string name="title_detail_schedule">予定詳細</string>
+    <string name="text_name">名前：藤本</string>
+    <string name="text_place">作業（オフィス）</string>
+    <string name="text_date_time">2020/07/11（月）　11:00~12:00</string>
+    <string name="button_edit">修正</string>
+    <string name="button_delete">削除</string>
+    <string name="content_description_blackboard">黒板</string>
+    <string name="content_description_icon_calendar">カレンダーアイコン</string>
+    <string name="content_description_icon_edit">修正アイコン</string>
+    <string name="content_description_icon_delete">削除アイコン</string>
 </resources>
