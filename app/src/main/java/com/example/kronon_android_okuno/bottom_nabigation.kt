@@ -25,6 +25,5 @@ class bottom_nabigation : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        }
     }
 }
