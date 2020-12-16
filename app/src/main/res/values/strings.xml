@@ -4,4 +4,12 @@
     <string name="title_calendar">カレンダー</string>
     <string name="title_planesheet">予定表</string>
     <string name="title_account">アカウント</string>
+    <string-array name="my_header_title">
+        <item></item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+    </string-array>
 </resources>
