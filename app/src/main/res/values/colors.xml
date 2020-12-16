@@ -15,4 +15,5 @@
     <color name="default_text">#5C5A5A</color>
     <color name="hint_text">#80515C6F</color>
     <color name="place_background">#FFD8D6</color>
+    <color name="orange">#DF9C54</color>
 </resources>

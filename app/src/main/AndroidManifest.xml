@@ -21,6 +21,10 @@
         <activity android:name=".DetailScheduleActivity" />
         <activity android:name=".EditScheduleActivity" />
         <activity android:name=".InputScheduleActivity" />
+        <activity
+            android:name=".bottom_nabigation"
+            android:label="@string/title_activity_bottom_nabigation" />
+        <activity android:name=".AccountActivity" />
     </application>
 
 </manifest>
