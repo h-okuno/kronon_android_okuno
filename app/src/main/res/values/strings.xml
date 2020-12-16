@@ -61,4 +61,6 @@
     <string name="content_description_icon_account">アカウントアイコン</string>
     <string name="content_description_icon_user">ユーザーアイコン</string>
     <string name="content_description_icon_logout">ログアウトアイコン</string>
+    <string name="content_description_button_input_schedule">予定登録ボタン</string>
+    <string name="top_text">おはよう🌞今日は水曜日、折り返しだよ。今日も1日がんばろうね！</string>
 </resources>
