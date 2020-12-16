@@ -12,7 +12,7 @@
         <activity
             android:name=".bottom_nabigation"
             android:label="@string/title_activity_bottom_nabigation"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".CalendarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

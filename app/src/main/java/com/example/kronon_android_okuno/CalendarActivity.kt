@@ -10,7 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import android.widget.CalendarView
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class CalendarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_nabigation)
