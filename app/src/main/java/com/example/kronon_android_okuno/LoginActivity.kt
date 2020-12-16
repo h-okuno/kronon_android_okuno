@@ -1,5 +1,6 @@
 package com.example.kronon_android_okuno
 
+import android.accounts.Account
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +14,7 @@ class LoginActivity: AppCompatActivity() {
 
         val button_login = findViewById<Button>(R.id.button_login)
         button_login.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent)
         }
 

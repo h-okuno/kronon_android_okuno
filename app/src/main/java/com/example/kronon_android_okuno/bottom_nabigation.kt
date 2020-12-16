@@ -1,6 +1,8 @@
 package com.example.kronon_android_okuno
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -22,5 +24,11 @@ class bottom_nabigation : AppCompatActivity() {
                 R.id.navigation_calendar, R.id.navigation_planesheet, R.id.navigation_account))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val logout = findViewById<LinearLayout>(R.id.button_logout)
+        logout.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

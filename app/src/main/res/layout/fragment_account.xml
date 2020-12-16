@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar_input_schedule" />
 
     <LinearLayout
-        android:id="@+id/btnKeyReissue"
+        android:id="@+id/button_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
