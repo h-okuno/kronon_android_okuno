@@ -32,11 +32,5 @@ class AccountActivity : AppCompatActivity() {
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val logout = findViewById<LinearLayout>(R.id.button_logout)
-        logout.setOnClickListener {
-            val intent = Intent(this, AccountActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }

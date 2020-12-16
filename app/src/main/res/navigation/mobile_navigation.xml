@@ -21,5 +21,16 @@
         android:id="@+id/navigation_account"
         android:name="com.example.kronon_android_okuno.ui.notifications.NotificationsFragment"
         android:label="@string/title_account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account" >
+
+        <action
+            android:id="@+id/action_navigation_account_to_login"
+            app:destination="@+id/title_login" />
+    </fragment>
+
+    <activity
+        android:id="@+id/title_login"
+        android:name="com.example.kronon_android_okuno.LoginActivity"
+        android:label="@string/login_title"
+        tools:layout="@layout/login" />
 </navigation>
