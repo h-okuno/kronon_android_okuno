@@ -24,5 +24,11 @@ class CreateNewAccountActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val create_new_account = findViewById<Button>(R.id.button_create_account)
+        create_new_account.setOnClickListener {
+            val intent = Intent(this, CalendarActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
